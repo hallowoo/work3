@@ -17,7 +17,7 @@ public:
 	SimpleVector() : currentSize(0), currentCapacity(10) {
 		data = new T[currentCapacity];
 	}
-	
+
 	SimpleVector(int capacity) : currentSize(0), currentCapacity(capacity) {
 		data = new T[currentCapacity];
 	}
@@ -30,15 +30,15 @@ public:
 		if (currentSize < currentCapacity) {
 			data[currentSize++] = value;
 		}
-		else{}
+		else {}
 	}
 
 	void pop_back() {
 		if (currentSize > 0) {
-			currentSize-- ;
+			currentSize--;
 		}
 		else {}
-	
+
 	}
 
 	int size() {
@@ -75,14 +75,14 @@ int main() {
 	alphabet.push_back('a');
 	alphabet.push_back('b');
 	alphabet.push_back('d');
-	
+
 	cout << "alphabet : " << alphabet.printData() << endl;
-	cout << "alphabetSize : " << alphabet.size() << endl; 
+	cout << "alphabetSize : " << alphabet.size() << endl;
 
 	alphabet.pop_back();
 
 	cout << "delete 'd' from alphabet : " << alphabet.printData() << endl;
-	cout << "alphabetSize : " << alphabet.size() << endl; 
+	cout << "alphabetSize : " << alphabet.size() << endl;
 	alphabet.push_back('c');
 
 	cout << "add 'c' to alphabet : " << alphabet.printData() << endl;
@@ -92,7 +92,7 @@ int main() {
 	alphabet.push_back('e');
 	alphabet.push_back('f');
 	cout << "add d,e,f to alphabet : " << alphabet.printData() << endl;
-	cout << "alphabetSize : " << alphabet.size() << endl; 
+	cout << "alphabetSize : " << alphabet.size() << endl;
 
 
 	return 0;
