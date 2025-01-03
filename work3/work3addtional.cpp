@@ -6,12 +6,12 @@ using namespace std;
 template<typename T>
 
 class SimpleVector {
-protected:
+private:
 	T* data;
 	int currentSize;
 	int currentCapacity;
 
-private:	
+	
 
 	void resize(int newCapacity) {
 		newCapacity = currentCapacity + 5;
